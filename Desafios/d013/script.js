@@ -10,11 +10,11 @@ function notas() {
     res.innerHTML = `<h2>Analisando a situação de ${aluno}<h2>`
 
     if (media < 3) {
-        var situcao = `abaixo de ${media}, o aluno está <strong id="R">REPROVADO</strong>`
+        var situcao = 'abaixo de 3,0, o aluno está <strong id="R">REPROVADO</strong>'
     } else if (media <= 6) {
         var situcao = 'entre 3,0 e 6,0, o aluno está em <strong id="r">RECUPERAÇÃO</strong>'
     } else {
-        var situcao = `acima de ${media}, o aluno está <strong id="A">APROVADO</strong>`
+        var situcao = 'acima de 6,0, o aluno está <strong id="A">APROVADO</strong>'
     }
 
     var n1 = n1.toFixed(1).replace('.', ',')
